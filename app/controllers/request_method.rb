@@ -5,6 +5,6 @@ class RequestMethod
 
   def call(env)
     status, headers, body = @app.call(env)
-	[status, headers, [body.first << "GET"]]
+	[status, headers, body << "GET"]
   end  
 end

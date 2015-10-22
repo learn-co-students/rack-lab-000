@@ -5,6 +5,6 @@ class ServerPort
 
   def call(env)
     status, headers, body = @app.call(env)
-	[status, headers, [body.first << "80"]]
+	[status, headers, body << "80"]
   end
 end
