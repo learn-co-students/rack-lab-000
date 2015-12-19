@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Stats Doc </title>
+  </head>
+  <body>
+    <h1> Some stats about that. </h1>
+    <ul>
+      <li> That request method is: <%= env["REQUEST_METHOD"] %> </li>
+      <li> That server port is: <%= env["SERVER_PORT"] %> </li>
+      <li> That random number is: <%= rand(1-6) %> </li>
+      <li> Click <a href="./about"> here for more. </a></li>
+    </ul>
+  </body>
+</html>
