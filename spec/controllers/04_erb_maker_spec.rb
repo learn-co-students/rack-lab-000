@@ -1,4 +1,5 @@
 require_relative '../spec_helper'
+require 'erb'
 
 describe 'ErbMaker Middleware' do
   def app
