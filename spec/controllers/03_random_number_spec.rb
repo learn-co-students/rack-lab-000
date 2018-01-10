@@ -4,7 +4,7 @@ describe 'RandomNumber Middleware' do
   def app
     RandomNumber.new(Application.new)
   end
-  
+
   it_behaves_like "an ok request"
 
   it 'adds a random number to the response' do

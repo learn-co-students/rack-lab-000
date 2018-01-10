@@ -6,7 +6,7 @@ describe 'Application' do
   end
 
   it_behaves_like "an ok request"
-  
+
   let(:expected_stuff) {[
     "<html>",
     "GET",
